@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Race Schedule</h1>
+
+    <label for="yearInput">Enter Year:</label>
+    <input type="text" id="yearInput" placeholder="e.g., 2023">
+    <button id="fetchButton">Get Schedule</button>
+
+    <div id="info">
+        <p id="series"></p>
+        <p id="season"></p>
+        <p id="totalResults"></p>
+    </div>
+
+    <table id="scheduleTable">
+        <thead>
+            <tr>
+                <th>Season</th>
+                <th>Round</th>
+                <th>Race Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Country</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody id="scheduleBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
